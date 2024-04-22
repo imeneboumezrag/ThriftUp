@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.css" rel="stylesheet">
+    <link href="sign_up.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 mt-5 bg-primary">
+            <section id="section2 mr-3 ml-3">
+              <!-- Content for section 2 goes here -->
+              <h2>Section 2</h2>
+              <p>This is the content of section 2.</p>
+            </section>
+        </div>
+    
+     <div class="col-md-6">
+                <div class="row">
+                   <div class="col-6">
+                     <h4>Continue avec</h4>
+                   </div>
+               </div>
+
+               <div class="row">
+                 <div class="col-6 d-flex justify-content-center mr-2">
+                   <img id="imag" src="google.png">
+                   <img id="imag" src="facebook.png">
+                 </div>
+               </div>
+            <div class="row">
+                <div class="col-6 ">
+                  <div class="inline-elements">
+                    <hr> 
+                    <p>OU</p> 
+                    <hr>
+                  </div>
+                </div>
+            </div>
+                <h2>S'inscrire</h2>
+          <form class="signup">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nom" class="form-label">Nom:</label><br>
+                        <input type="text" name="nom" id="nom" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="prn" class="form-label">Prénom:</label><br>
+                        <input type="text" name="prenom" id="prn" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="DN" class="form-label">Date de naissance:</label><br>
+                        <input type="date" name="dateN" id="DN" class="form-control" placeholder="jj/mm/aaaa" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="wl" class="form-label">Wilaya:</label><br>
+                        <input type="text" id="wl" name="wilaya" class="form-control" placeholder="Choisissez une wilaya" autocomplete="off">
+                        <datalist id="wilayaList">
+                            <option value="Adrar">
+                                <option value="Chlef">
+                                <option value="Laghouat">
+                                <option value="Oum El Bouaghi">
+                                <option value="Batna">
+                                <option value="Béjaïa">
+                                <option value="Biskra">
+                                <option value="Béchar">
+                                <option value="Blida">
+                                <option value="Bouira">
+                                <option value="Tamanrasset">
+                                <option value="Tébessa">
+                                <option value="Tlemcen">
+                                <option value="Tiaret">
+                                <option value="Tizi Ouzou">
+                                <option value="Alger">
+                                <option value="Djelfa">
+                                <option value="Jijel">
+                                <option value="Sétif">
+                                <option value="Saïda">
+                                <option value="Skikda">
+                                <option value="Sidi Bel Abbès">
+                                <option value="Annaba">
+                                <option value="Guelma">
+                                <option value="Constantine">
+                                <option value="Médéa">
+                                <option value="Mostaganem">
+                                <option value="M'Sila">
+                                <option value="Mascara">
+                                <option value="Ouargla">
+                                <option value="Oran">
+                                <option value="El Bayadh">
+                                <option value="Illizi">
+                                <option value="Bordj Bou Arreridj">
+                                <option value="Boumerdès">
+                                <option value="El Tarf">
+                                <option value="Tindouf">
+                                <option value="Tissemsilt">
+                                <option value="El Oued">
+                                <option value="Khenchela">
+                                <option value="Souk Ahras">
+                                <option value="Tipaza">
+                                <option value="Mila">
+                                <option value="Aïn Defla">
+                                <option value="Naâma">
+                                <option value="Aïn Témouchent">
+                                <option value="Ghardaïa">
+                                <option value="Relizane">
+                                <option value="El M'ghair">
+                                <option value="El Menia">
+                                <option value="Ouled Djellal">
+                                <option value="Bordj Baji Mokhtar">
+                                <option value="Béni Abbès">
+                                <option value="Timimoun">
+                                <option value="Tamanrasset">
+                                <option value="Djanet">
+                                <option value="In Salah">
+                                <option value="In Guezzam">
+                            
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="em" class="form-label">Adresse mail:</label><br>
+                <input type="email" name="email" id="em" class="form-control" placeholder="example@gmail.com" required>              
+            </div>              
+            <div class="form-group">
+                <label for="Mp" class="form-label">Mot de passe:</label><br>
+                <input type="password" name="password" id="Mp" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="num" class="form-label">Numéro de téléphone:</label><br>
+                <input type="tel" name="Pnumber" id="num" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+        </div>
+    </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#wl').typeahead({
+                source: [
+                'Adrar', 'Chlef', 'Laghouat', 'Oum El Bouaghi', 'Batna', 'Béjaïa', 'Biskra', 'Béchar', 'Blida', 'Bouira',
+                'Tamanrasset', 'Tébessa', 'Tlemcen', 'Tiaret', 'Tizi Ouzou', 'Alger', 'Djelfa', 'Jijel', 'Sétif', 'Saïda',
+                'Skikda', 'Sidi Bel Abbès', 'Annaba', 'Guelma', 'Constantine', 'Médéa', 'Mostaganem', 'M Sila', 'Mascara',
+                'Ouargla', 'Oran', 'El Bayadh', 'Illizi', 'Bordj Bou Arreridj', 'Boumerdès', 'El Tarf', 'Tindouf', 'Tissemsilt',
+                'El Oued', 'Khenchela', 'Souk Ahras', 'Tipaza', 'Mila', 'Aïn Defla', 'Naâma', 'Aïn Témouchent', 'Ghardaïa',
+                'Relizane', 'El M\'ghair', 'El Menia', 'Ouled Djellal', 'Bordj Baji Mokhtar', 'Béni Abbès', 'Timimoun', 
+                'Tamanrasset', 'Djanet', 'In Salah', 'In Guezzam'
+                ] // List of wilayas in Algeria
+            });
+        });
+    </script>
+</body>
+</html>

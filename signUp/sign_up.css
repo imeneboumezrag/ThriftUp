@@ -1,0 +1,29 @@
+:root {
+    --bs-primary: #007bff; /* Adjust this color to your desired primary color */
+  }
+.section {
+    height: 100vh; /* Set section height to 100% of viewport height */
+    margin-left: 500px;
+    margin-right: 500px;
+}
+#imag {
+    width: 30px; /* Set the width */
+    height: 30px; /* Set the height */
+    margin-right: 25px;
+  }
+ 
+  .inline-elements {
+    display: flex;
+    align-items: center;
+  }
+  .inline-elements hr {
+    flex-grow: 1; /* The hr elements take up all available space */
+    border-top: 1px solid black; /* Adjust thickness and color as needed */
+    margin: 0 10px; /* Add margin around hr elements */
+  }
+  .inline-elements p {
+    margin: 0; /* Remove default margin from the paragraph */
+  }
+  .button{
+ --btn-primery:
+  }
