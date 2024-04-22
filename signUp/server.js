@@ -61,7 +61,35 @@ try{
 }
   });
 });
-// Render EJS file
+app.post('/signup', async (req, res) => {
+  const nom = req.body.nom;
+  const prenom = req.body.prenom;
+  const dateN = req.body.dateN;
+  const wilaya = req.body.wilaya;
+  const email = req.body.email;
+  const password = req.body.password;
+  const Pnumber = req.body.Pnumber;
+
+  // Hash du mot de passe avec bcrypt
+  const hashedPassword = await bcrypt.hash(password, 10);
+
+  const sql = 'INSERT INTO client (nom, prenom, `date de naissance`, wilaya, `Adresse mail`, `mot de passe`, `numero`) VALUES (?, ?, ?, ?, ?, ?, ?)';
+  connection.query(sql, [nom, prenom, dateN, wilaya, email, hashedPassword, Pnumber], (err, result) => {
+    if (err) {
+      console.error('Erreur lors de l\'insertion des données dans la base de données :', err);
+      return res.status(500).send('Erreur lors de l\'inscription');
+    }
+    console.log('Nouvel utilisateur inscrit avec succès');
+    return res.status(200).send('Inscription réussie pour ' + prenom + ' ' + nom);
+  });
+});
+
+// Render EJS file for signup page
+app.get('/signup', (req, res) => {
+  res.render('sign_up');
+});
+
+// Render EJS file for signin page
 app.get('/', (req, res) => {
   res.render('sign_in'); // Replace 'index' with the name of your EJS file (without the .ejs extension)
 });
