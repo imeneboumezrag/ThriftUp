@@ -70,11 +70,9 @@ app.post('/signup', async (req, res) => {
   const password = req.body.password;
   const Pnumber = req.body.Pnumber;
 
-  // Hash du mot de passe avec bcrypt
-  const hashedPassword = await bcrypt.hash(password, 10);
 
   const sql = 'INSERT INTO client (nom, prenom, `date de naissance`, wilaya, `Adresse mail`, `mot de passe`, `numero`) VALUES (?, ?, ?, ?, ?, ?, ?)';
-  connection.query(sql, [nom, prenom, dateN, wilaya, email, hashedPassword, Pnumber], (err, result) => {
+  connection.query(sql, [nom, prenom, dateN, wilaya, email, password, Pnumber], (err, result) => {
     if (err) {
       console.error('Erreur lors de l\'insertion des données dans la base de données :', err);
       return res.status(500).send('Erreur lors de l\'inscription');
