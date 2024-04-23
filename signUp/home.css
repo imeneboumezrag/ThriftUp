@@ -1,0 +1,38 @@
+h2{
+  margin-bottom:  60px;
+  text-align: center;
+}
+.carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  
+}
+
+.card {
+  margin: 10px;
+  height: 500px;
+  padding: 20px;
+  border-color: #809672;
+  text-align: center;
+}
+.card-title{
+  text-align: center;
+}
+img{
+ height: 350px;
+ align-content: center;
+ border-radius: 20px 20px;
+}
+.btn-primary{
+  margin-top: 14px;
+  background-color:#809672 ;
+  border: none;
+ 
+}
+.btn-primary:hover{
+  background-color: #B3B792;
+}
