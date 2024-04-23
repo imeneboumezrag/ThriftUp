@@ -1,6 +1,7 @@
 h2{
   margin-bottom:  60px;
   text-align: center;
+  color: #725C3A;
 }
 .carousel-inner {
   display: flex;
@@ -35,4 +36,15 @@ img{
 }
 .btn-primary:hover{
   background-color: #B3B792;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color:#B3B792; /* Background color */
+    border-radius: 50%; /* Make it circular */
+    font-size: 24px; /* Font size */
+    opacity: 0.5; /* Opacity */
+    transition: opacity 0.2s; /* Add transition for smooth hover effect */
+    top: 45%; 
 }
