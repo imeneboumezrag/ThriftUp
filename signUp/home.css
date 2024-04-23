@@ -1,3 +1,43 @@
+body{
+  background-color: #E5E0D8;
+}
+nav{
+  background-color: #809671;
+}
+.icon {
+  width: 24px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Add margin to separate from other navbar items */
+  margin-right: 20px; /* Add margin to separate from other navbar items */
+
+}
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
+.search-form {
+  display: none; /* Initially hidden */
+}
+
+.search-form.active {
+  display: flex;
+  align-items: center;
+  width: 80%; /* Expands to 80% of the navbar width */
+  height: 60px; /* Adjust height as needed */
+  margin: 0 auto; /* Center horizontally */
+  background-color: #fff; /* Optional: Set background color */
+  border-radius: 5px; /* Creates rounded corners */
+  padding: 10px 20px; /* Adds padding */
+  border: none; /* Removes the border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
+.nav-item{
+  margin-left: 20px; /* Add margin to separate from other navbar items */
+  margin-right: 20px; 
+}
+
 h2{
   margin-bottom:  60px;
   text-align: center;
